@@ -1,9 +1,7 @@
-# Atom Light UI theme
+# Hip Light UI theme
 
-Default light UI theme for Atom.
+A hip new take on the atom light theme for interface components.
 
-This theme is installed by default with Atom and can be activated by going to
-the _Themes_ section in the Settings view (`cmd-,`) and selecting it from the
-_UI Themes_ drop-down menu.
+This theme is a work in progress and will hopefully be finished when I have time.
 
-![](https://f.cloud.github.com/assets/671378/2265022/bb148a20-9e7a-11e3-81c8-bf5965d48183.png)
+Cheers!
