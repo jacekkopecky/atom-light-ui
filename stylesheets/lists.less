@@ -1,6 +1,8 @@
 @import "ui-variables";
 @import "ui-mixins";
 @import "octicon-mixins";
+@import "animations";
+
 
 .list-group, .list-tree {
   li:not(.list-nested-item),
@@ -121,4 +123,15 @@ li.ui-draggable-dragging, li.ui-sortable-helper {
   padding: 0 @component-padding;
   background: @background-color-highlight;
   box-shadow: 0 0 1px @base-border-color;
+}
+
+.list-tree.has-collapsable-children .list-nested-item.collapsed > .list-item:before {
+  content: "\f0a3";
+  -webkit-transform: rotate(-90deg);
+  -webkit-animation: rotateSide .1s linear;
+}
+
+.list-tree.has-collapsable-children .list-nested-item > .list-item:before {
+  -webkit-transform: rotate(0deg);
+  -webkit-animation: rotateDown .1s linear;
 }
