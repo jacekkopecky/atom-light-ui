@@ -6,4 +6,4 @@ A lot of the color decisions will be based off the current color scheme of my pe
 
 Cheers!
 
-![screenshot](http://cl.ly/image/3R2z1v430G0J)
+![screenshot](https://s3.amazonaws.com/GitHub_Assets/Hip-UI-Screen.png)
