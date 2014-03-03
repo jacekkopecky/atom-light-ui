@@ -1,7 +1,7 @@
 {
   "name": "hip-light-ui",
   "theme": "ui",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "A hip new take on the atom light theme for interface components",
   "repository": "https://github.com/HipsterBrown/atom-light-ui",
   "license": "MIT",
