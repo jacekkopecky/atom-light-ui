@@ -128,10 +128,12 @@ li.ui-draggable-dragging, li.ui-sortable-helper {
 .list-tree.has-collapsable-children .list-nested-item.collapsed > .list-item:before {
   content: "\f0a3";
   -webkit-transform: rotate(-90deg);
-  -webkit-animation: rotateSide .1s linear;
+  -webkit-animation: rotateSide .1s ease-out;
 }
 
 .list-tree.has-collapsable-children .list-nested-item > .list-item:before {
-  -webkit-transform: rotate(0deg);
-  -webkit-animation: rotateDown .1s linear;
+  -webkit-animation: rotateDown .1s ease-out;
+}
+.entries {
+  -webkit-animation: showItems .2s ease-out;
 }
