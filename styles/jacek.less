@@ -1,0 +1,91 @@
+@bg: #fdf6e3;
+@bgl1: @bg + #111;
+
+@bgd1: #ead7c6;
+@bgd2: #ccac90;
+@bgd3: #736852;
+
+@cursor: #29ff2f;
+@cursorhi: #00ff00;
+
+@uifontsize: 14px;
+
+atom-workspace {
+  .tab-bar {
+    background: @bgd1;
+
+    .tab,
+    .tab:hover,
+    .tab.active {
+      font-size: @uifontsize; font-family: "Lucida Grande";
+    }
+
+    .tab,
+    .tab::before,
+    .tab::after {
+      color: #888888;
+      background: @bgd1;
+      border-color: @bgd2;
+    }
+  }
+
+  .tab-bar::after {
+    background-color: @bgd1;
+    border-color: @bgd2;
+  }
+
+  .pane.active {
+    .tab-bar { background: @bgd3; }
+    .tab-bar .tab,
+    .tab-bar .tab.active { color: black; }
+
+    .tab.active,
+    .tab.active::before,
+    .tab.active::after { background: @bg; }
+
+    .tab-bar::after {
+      background-color: @bg;
+    }
+  }
+
+  .tab-bar {
+    .tab       div.close-icon::before { opacity: 0; transition: opacity .3s; padding: 0 0 0 .2em; border-radius: .3em;  }
+    .tab:hover div.close-icon::before { opacity: 1; }
+    .tab:hover div.close-icon:hover::before { background: rgba(0,0,0,.7); color: white; }
+  }
+
+  background-color: @bgd1;
+
+  .tree-view {
+    font-size: @uifontsize;
+
+    & > .directory:before { height: @uifontsize * 2; }
+
+    & > .directory > .header.list-item { line-height: @uifontsize * 3; }
+
+    &.list-tree.has-collapsable-children .list-nested-item > .list-tree > li,
+    &.list-tree.has-collapsable-children .list-nested-item > .list-group > li {
+      padding-left: @uifontsize * .7;
+    }
+  }
+
+  .list-group li:not(.list-nested-item), .list-tree li:not(.list-nested-item), .list-group li.list-nested-item > .list-item, .list-tree li.list-nested-item > .list-item {
+    color: black;
+  }
+
+  .symbols-tree-view {
+    .list-tree.has-collapsable-children li.list-item { margin-left: .3em; }
+
+    .icon-function::before { font-size: 70%; line-height: 70%; }
+
+    .list-group li:not(.list-nested-item),
+    .list-group li.list-nested-item > .list-item,
+    .list-tree li:not(.list-nested-item),
+    .list-tree li.list-nested-item > .list-item
+      { color: black; }
+
+    .list-group .selected::before,
+    .list-tree .selected::before
+      { background-color: rgba(255,255,255,.8); }
+  }
+}
