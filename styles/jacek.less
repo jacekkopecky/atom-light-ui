@@ -5,10 +5,22 @@
 @bgd2: #ccac90;
 @bgd3: #736852;
 
+@bgd1-devel: #ffccbb;
+@bgd3-devel: #dd0000;
+
 @cursor: #29ff2f;
 @cursorhi: #00ff00;
 
 @uifontsize: 14px;
+
+atom-workspace.devel-mode {
+  atom-pane.active {
+    .tab-bar { background: @bgd3-devel; }
+  }
+  status-bar {
+    background-color: @bgd1-devel;
+  }
+}
 
 atom-workspace {
   .tab-bar {
